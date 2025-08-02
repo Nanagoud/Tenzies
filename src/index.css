@@ -15,7 +15,7 @@ body {
 div#root {
   height: 100%;
   width: 100%;
-  max-height: 400px;
+  max-height: 500px;
   max-width: 400px;
 }
 
@@ -46,9 +46,11 @@ main {
 }
 
 .dies-container {
-  display: grid;
-  gap: 15px;
-  grid-template-columns: repeat(5, 1fr);
+   display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  width: 100%;
+  max-width: 350px;
 }
 
 
@@ -65,6 +67,23 @@ main {
   cursor: pointer;
   transition: transform 0.3s ease;
 }
+
+
+
+@media (max-width: 400px) {
+  .die-face {
+    width: 45px;
+    height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .roll-button {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 12px 0;
+  }
+}
+
 
 .die-face:hover {
   transform: scale(1.1);
