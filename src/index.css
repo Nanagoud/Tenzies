@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #0B2434;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#root {
+  height: 100%;
+  width: 100%;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+main {
+  background-color: #F5F5F5;
+  height: 100%;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.instructions {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-top: 0;
+    text-align: center;
+}
+
+.timer {
+  margin-top: 0;
+}
+
+.dies-container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+
+.die-face {
+  width: 60px;
+  height: 60px;
+  font-size: 2rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.die-face:hover {
+  transform: scale(1.1);
+}
+.die-face.held {
+  background-color: #59E391; /* light green to indicate it's held */
+  border-color: #59E391;
+}
+
+.die-face.rolling {
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(10deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.roll-button {
+  margin-top: 1px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-family: inter;
+  background-color: #5035FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.roll-button:hover {
+  background-color: #8c80db;
+}
