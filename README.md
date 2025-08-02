@@ -101,17 +101,5 @@ tenziee/
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## 🤝 Contributing
-
-Feel free to contribute to this project by:
-- Reporting bugs
-- Suggesting new features
-- Submitting pull requests
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
 
 Enjoy playing Tenziee! 🎲✨
