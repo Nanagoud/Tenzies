@@ -1,4 +1,4 @@
-# Tenziee - Dice Game
+# Tenziee - Dice Game:("Website")["https://tenzies-puce-chi.vercel.app/"]
 
 A fun and interactive dice game built with React and Vite where players roll dice to get all ten dice showing the same value.
 
